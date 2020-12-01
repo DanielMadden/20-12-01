@@ -1,0 +1,143 @@
+/* #region TAG */
+
+body {
+  background-color: rgb(249, 249, 255);
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {}
+
+/* #endregion */
+
+/* #region CLASS */
+
+.bar {
+  width: 100%;
+  background-color: rgb(23, 23, 124);
+  border-bottom: black 3px solid;
+  border-top: black 3px solid;
+}
+
+p {
+  text-align: left;
+}
+
+/* #endregion */
+
+/* #region ID */
+
+#topBar {
+  position: fixed top:0;
+  left: 0;
+  height: 10%;
+}
+
+#topBarText {
+  color: white;
+  text-align: center;
+  /* font-size:100%; */
+}
+
+#lightBar {
+  width: 100%;
+  background-color: rgb(195, 195, 255);
+  height: 20px;
+}
+
+#centerText {
+  text-align: center;
+  /* position:absolute; */
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#paragraphText {
+  overflow-y: auto;
+}
+
+#adBar {
+  position: fixed;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 20%;
+  z-index: 100;
+}
+
+#adText {
+  padding-left: 15px
+}
+
+#adTitle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#adDesc {
+  margin-top: 3px;
+}
+
+#xtraSpace {
+  position: absolute;
+  min-height: 15%;
+  width: 100%;
+}
+
+#bottomBar {
+  position: fixed;
+  bottom: 0;
+  height: 15%;
+}
+
+/* #endregion */
+
+/* #region MEDIA */
+
+@media only screen and (min-width: 700px) {
+  #adBar {
+    top: 20%;
+  }
+  img {
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #centerText {
+    width: 90%;
+  }
+  #adBar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 15%;
+    width: 100%;
+    color: white;
+  }
+  img {
+    position: absolute;
+    width: 40%;
+    max-height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  #adText {
+    position: fixed;
+    left: 40%;
+    font-size: 80%;
+  }
+  #adTitle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #adDesc {
+    margin-top: 3px;
+  }
+}
